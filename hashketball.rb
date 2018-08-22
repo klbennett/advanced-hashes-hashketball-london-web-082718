@@ -194,6 +194,7 @@ end
         attribute.each do |x|
               if x == name
                   return x[:shoe]
+                  binding.pry
                 end
               end
             end
