@@ -194,6 +194,7 @@ end
         attribute.each do |x, y|
               if x == name
                   return y[:shoe]
+                end
               end
             end
       end
