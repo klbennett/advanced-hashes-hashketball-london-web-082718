@@ -131,12 +131,12 @@ end
 def num_points_scored(name)
 game_hash.each do |location, team_data|
     team_data.each do |attribute, data|
-            if attribute == name
-              return data[:points]
+      data.each do |x, y|
+            if x == name
+              return y[points]
             end
         end
       end
-end 
 
 
  def team_colors (team_name)
