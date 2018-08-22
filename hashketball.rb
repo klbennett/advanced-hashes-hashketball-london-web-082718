@@ -192,9 +192,8 @@ end
   game_hash.each do |location, team_data|
       team_data.each do |attribute, data|
         attribute.each do |x|
-          binding.pry
               if x == name
-                  return y[:shoe]
+                  return x[:shoe]
                 end
               end
             end
