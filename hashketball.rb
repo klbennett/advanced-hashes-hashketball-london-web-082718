@@ -190,9 +190,9 @@ end
 
  def shoe_size(name)
   game_hash.each do |location, team_data|
-      team_data.each do |attribute, data|
+      team_data.collect do |attribute, data|
               if attribute == name
-                  return x[:shoe]
+                  return atrribute[:shoe]
                   binding.pry
                 end
               end
